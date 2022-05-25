@@ -11,7 +11,7 @@ export default function App(){
       <textarea autoFocus className="textarea" value={input} 
       onChange= {(e) => setInput(e.target.value)} 
       />
-      <ReactMarkdown children={input} className="markdown" renderers={{
+      <ReactMarkdown source={input} className="markdown" renderers={{
         code: Component,
       }} />
     </div>
